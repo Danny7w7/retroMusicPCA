@@ -1,0 +1,7 @@
+{
+  "name": "retroMusicPCA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
