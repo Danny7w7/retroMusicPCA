@@ -18,4 +18,12 @@
   </swiper-container>
 
   <ion-button expand="block" (click)="changeTheme()">Cambiar tema</ion-button>
+
+  <!-- demo de storage -->
+   <div>
+    <h3>Demo de storage</h3>
+    <div [style.background-color="'var(--themeBackground)'">
+      <p>Tema actual> {{currentTheme}}</p>
+    </div>
+   </div>
 </ion-content>
