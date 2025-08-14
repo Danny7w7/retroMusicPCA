@@ -6,15 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <swiper-container 
-  pagination="true">
+<ion-content [fullscreen]="true" [style.background-color]="'var(--themeBackground)'">
+  <swiper-container pagination="true">
     <swiper-slide *ngFor="let genre of genres">
       <div class="slideContent">
         <h2>{{ genre.title }}</h2>
-        <img [src]="genre.image" [alt]="genre.title" srcset="">
+        <img [src]="genre.image" [alt]="genre.title">
         <p>{{ genre.description }}</p>
       </div>
     </swiper-slide>
   </swiper-container>
+
+  <ion-button expand="block" (click)="changeTheme()">Cambiar tema</ion-button>
 </ion-content>

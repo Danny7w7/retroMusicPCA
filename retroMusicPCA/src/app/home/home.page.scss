@@ -2,3 +2,14 @@
   text-align: center;
   padding: 10%;
 }
+
+ion-content {
+  --background: var(--themeBackground);
+  color: var(--themeText); /* color de texto */
+}
+
+ion-title,
+h1, h2, h3, h4, h5, h6,
+p, span, div {
+  color: var(--themeText);
+}

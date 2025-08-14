@@ -29,4 +29,15 @@ export class HomePage {
     }
   ]
   constructor() {}
+  
+  changeTheme() {
+    const currentBg = getComputedStyle(document.documentElement)
+      .getPropertyValue('--themeBackground')
+      .trim();
+
+    const isDark = currentBg === '#000000';
+
+    document.documentElement.style.setProperty('--themeBackground', isDark ? '#ffffff' : '#000000');
+    document.documentElement.style.setProperty('--themeText', isDark ? '#000000' : '#ffffff');
+  }
 }
